@@ -12,6 +12,13 @@ prac 3
 #include "lcd_stm32f0.h"
 
 // GLOBAL VARIABLES ----------------------------------------------------------|
+typedef struct
+{
+	int date;
+	int month;
+	int year;
+	int age;
+}age_data;
 
 
 // FUNCTION DECLARATIONS -----------------------------------------------------|
