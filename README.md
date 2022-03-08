@@ -29,13 +29,24 @@ void main(void);                                                   //COMPULSORY
 
 void main(void)
 {
-	
+	init_LCD();
+	age_data s1= {28, 8, 2000, 21};
+	char anas[50];
+
 
 	while(1)
 	{
-		
+		for(int x=0;x<=s1.age;x++)
+		{
+
+			sprintf(anas,"%d",x);
+			lcd_putstring(anas);
+			delay(500000);
+			lcd_command(CLEAR);
+		}
 
 	}
+
 }
 
 // OTHER FUNCTIONS -----------------------------------------------------------|
